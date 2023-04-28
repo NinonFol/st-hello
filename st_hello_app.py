@@ -6,7 +6,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from joblib import dump, load
 import seaborn as sns
 import io
@@ -74,18 +74,18 @@ if radio_btn == 'Présentation':
 
     st.write('Mettre distribution après preprocessing des données --> sur DF nettoyé')
     #Distribution variable cible
-    distrib = distribution(df)
-    fig = plt.figure(figsize=(6,4))
-    sns.barplot(y=distrib.values,x=distrib.index)
-    plt.title('Répartition des classes de la variable cible')
-    plt.xticks(rotation=90)
-    st.write(fig)
+#     distrib = distribution(df)
+#     fig = plt.figure(figsize=(6,4))
+#     sns.barplot(y=distrib.values,x=distrib.index)
+#     plt.title('Répartition des classes de la variable cible')
+#     plt.xticks(rotation=90)
+#     st.write(fig)
     
 elif radio_btn == 'Visualisation':
     st.markdown('graphes à afficher')
-    fig = plt.figure()
-    #*****
-    st.write(fig)
+#     fig = plt.figure()
+#     #*****
+#     st.write(fig)
 else :
     st.markdown('modélisation et résultats')
 
